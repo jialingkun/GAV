@@ -1,25 +1,35 @@
 {
   "project_info": {
-    "project_number": "434219905740",
-    "project_id": "firebase-itsgav"
+    "project_number": "912609841279",
+    "firebase_url": "https://gav-apps.firebaseio.com",
+    "project_id": "gav-apps",
+    "storage_bucket": "gav-apps.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:434219905740:android:a08650a90a13bac3",
+        "mobilesdk_app_id": "1:912609841279:android:a08650a90a13bac3",
         "android_client_info": {
           "package_name": "com.itsgav.gavapps"
         }
       },
       "oauth_client": [
         {
-          "client_id": "434219905740-328fhnv75nua9rdsk6ttrg67ujqc83ic.apps.googleusercontent.com",
+          "client_id": "912609841279-6p4sncaqr46di09dfmevnek0n40n99ch.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itsgav.gavapps",
+            "certificate_hash": "63b5c2c11e5bf0965fe379e4b666a7ea310b30aa"
+          }
+        },
+        {
+          "client_id": "912609841279-6ptted646htg2efpqe9q6mcppd994s8b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBwGh-F1VNInKhlI0sKRjjszowwc_Sx0o"
+          "current_key": "AIzaSyD73YaRELCEeW9hZQkk764YaQWKhs6UZR0"
         }
       ],
       "services": {
@@ -27,11 +37,16 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912609841279-6ptted646htg2efpqe9q6mcppd994s8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
