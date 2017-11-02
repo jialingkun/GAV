@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:allowBackup="true"
@@ -14,38 +17,6 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
 
         android:hardwareAccelerated="true">
-
-        <!-- Pusher's GCM listeners and services -->
-        <!--<receiver-->
-            <!--android:name="com.google.android.gms.gcm.GcmReceiver"-->
-            <!--android:exported="true"-->
-            <!--android:permission="com.google.android.c2dm.permission.SEND" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
-                <!--<category android:name="gcm.play.android.samples.com.gcmquickstart" />-->
-            <!--</intent-filter>-->
-        <!--</receiver>-->
-
-        <!--<service-->
-            <!--android:name="com.pusher.android.notifications.gcm.PusherGCMListenerService"-->
-            <!--android:exported="false" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
-            <!--</intent-filter>-->
-        <!--</service>-->
-
-        <!--<service-->
-            <!--android:name="com.pusher.android.notifications.gcm.GCMInstanceIDListenerService"-->
-            <!--android:exported="false">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.gms.iid.InstanceID"/>-->
-            <!--</intent-filter>-->
-        <!--</service>-->
-
-        <!--<service-->
-            <!--android:name="com.pusher.android.notifications.gcm.GCMRegistrationIntentService"-->
-            <!--android:exported="false">-->
-        <!--</service>-->
 
         <service
             android:name=".MyFirebaseInstanceIDService">
@@ -61,7 +32,9 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
